@@ -5,6 +5,9 @@ services:
     ports:
       - "5000:5000"
     container_name: app
+    environment:
+      TZ: "Asia/Tokyo"
+      FLASK_ENV: "development"
     volumes:
       - .:/usr/src/app
     command: flask run --host=0.0.0.0
