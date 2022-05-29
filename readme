@@ -1,6 +1,11 @@
 開発環境でflaskを起動する
 FLASK_ENV=development pipenv run flask run
 
+(python3実行時)dbファイル生成
+from app import db
+
+(python3実行時)新規データベース作成
+db.create_all()
 
 仮想サーバに入る
 pipenv shell
