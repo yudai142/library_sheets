@@ -1,0 +1,25 @@
+開発環境でflaskを起動する
+FLASK_ENV=development pipenv run flask run
+
+
+仮想サーバに入る
+pipenv shell
+
+ルートディレクトリ定義
+export FLASK_APP=app
+
+開発者モードに切り替え(仮想サーバ内で)
+export FLASK_ENV=development
+
+フラスク起動(仮想サーバ内で)
+flask run
+
+仮想サーバから出る
+exit
+
+
+requirementsテキストにpipenvのライブラリを書き込む
+pipenv lock -r > requirements.txt
+
+requirementsテキストからpipenvにライブラリを書き込む
+pipenv install -r ./requirements.txt
