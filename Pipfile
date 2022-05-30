@@ -12,6 +12,8 @@ MarkupSafe = "==2.1.1"
 Werkzeug = "==2.1.2"
 flask-sqlalchemy = "*"
 pytz = "*"
+flask-login = "*"
+flask-bootstrap = "*"
 
 [dev-packages]
 
